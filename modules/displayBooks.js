@@ -1,12 +1,9 @@
-
-//export let booksArray = [];
-
 export class displayBooksClass {
   constructor() {
     this.booksArrayLocalStorage = JSON.parse(localStorage.getItem('BooksList'));
     this.bookList = document.getElementById('bookList');
-    this.titleInput = document.getElementById('title');
-    this.authorInput = document.getElementById('author');
+    this.titleInput = document.getElementById('bookTitleInput');
+    this.authorInput = document.getElementById('bookAuthorInput');
   }
 
   showBooksMethod() {

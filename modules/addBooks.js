@@ -1,19 +1,19 @@
-//import { booksArray } from "./displayBooks";
-
 export class addBookClass {
-  constructor(title, author) {
+  constructor() {
     this.booksArray = [];
-    localStorage.setItem('BooksList', JSON.stringify(this.booksArray));
-    this.bookTitle = title; 
-    this.bookAuthor = author; 
+    this.titleInput = document.getElementById('bookTitleInput');
+    this.authorInput = document.getElementById('bookAuthorInput');
+    if(localStorage.getItem('BooksList')) {
+      this.booksArray = JSON.parse(localStorage.getItem('BooksList'));
+    }
   }
 
   addBookMethod() {
       const bookObject = {
-      title: this.bookTitle,
-      author: this.bookAuthor,
-    };
-    this.booksArray.push(bookObject);
-    localStorage.setItem('BooksList', JSON.stringify(this.booksArray));    
+        title: this.titleInput.value,
+        author: this.authorInput.value,
+      };
+      this.booksArray.push(bookObject);
+      localStorage.setItem('BooksList', JSON.stringify(this.booksArray)); 
   }
 }

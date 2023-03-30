@@ -6,7 +6,7 @@ const bookTitleInput= document.getElementById('bookTitleInput');
 const bookAuthorInput= document.getElementById('bookAuthorInput');
 
 
-const addBooks = new addBookClass(bookTitleInput.value, bookAuthorInput.value);
+const addBooks = new addBookClass();
 const displayBooks = new displayBooksClass();
 
 displayBooks.showBooksMethod();
