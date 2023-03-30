@@ -1,0 +1,20 @@
+{
+  "name": "Awesome-Books-ES6",
+  "version": "1.0.0",
+  "description": "In this project, the Awesome books app will be restructured to make it more organized by using modules and ES6 syntax.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddxSotz/Awesome-Books-ES6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EddxSotz/Awesome-Books-ES6/issues"
+  },
+  "homepage": "https://github.com/EddxSotz/Awesome-Books-ES6#readme"
+}
