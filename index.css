@@ -39,6 +39,7 @@ body {
 
 .navbarItems a:hover {
   color: #ff6000;
+  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
 }
 
 #books {
@@ -74,6 +75,7 @@ body {
   cursor: pointer;
   border: 2px solid #ff6000;
   color: #ff6000;
+  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
 }
 
 #addBook {
@@ -110,6 +112,7 @@ body {
   cursor: pointer;
   border: 2px solid #ff6000;
   color: #ff6000;
+  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
 }
 
 #contact {
@@ -131,6 +134,7 @@ body {
 
 #contact ul {
   margin-top: 1rem;
+  margin-left: 1.5rem;
 }
 
 footer {
