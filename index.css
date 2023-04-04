@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  font-family: 'Comic Neue', cursive;
+  font-weight: bold; 
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 3px solid black;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  font-size: 1.25rem;
+}
+
+.navbarItems {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.navbarItems a {
+  margin-left: 3rem;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.navbarItems a:hover{
+  color: #ff6000;
+}
+
+#books {
+  margin-top: 4rem;
+}
+
+#bookList {
+  border: 3px solid black;  
+}
+
+.mainTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#bookList li {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.removeButton {
+  background-color: white;
+  border: 2px solid black;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+}
+
+.removeButton:hover {
+  cursor: pointer;
+  border: 2px solid #ff6000;
+  color: #ff6000;
+}
+
+#addBook {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+#form {
+  text-align: center;
+  width: 50%;
+  margin-inline: auto;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  border: 3px solid black;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+#button {
+  background-color: white;
+  border: 2px solid black;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+}
+
+#button:hover {
+  cursor: pointer;
+  border: 2px solid #ff6000;
+  color: #ff6000;
+}
+
+#contact {
+  width: 65%;
+  margin-inline: auto;
+  font-size: 1.25rem;
+}
+
+#contact h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#contact div {
+  width: 50%;
+  margin-inline: auto;
+}
+
+#contact ul {
+  margin-top: 1rem;
+}
+
+footer {
+  border: 3px solid black;
+  padding: 1rem;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}

@@ -18,7 +18,13 @@ export class displayBooksClass {
 
       bookItem.appendChild(removeButton);
       this.bookList.appendChild(bookItem);
-      }     
+
+      if(i%2 ===0){
+        bookItem.setAttribute('style', 'background-color: #dbdbdb;');
+      }else{ 
+        bookItem.setAttribute('style', 'background-color:white');
+      }
+      }
   }
 
 }

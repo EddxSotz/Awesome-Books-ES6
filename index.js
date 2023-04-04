@@ -4,6 +4,12 @@ import { removeBook } from './modules/removeBook.js';
 
 const form = document.getElementById('form');
 const booksList = document.getElementById('bookList');
+const booksContainer = document.getElementById('books');
+const addBooksContainer = document.getElementById('addBook');
+const contactContainer = document.getElementById('contact');
+const bookListNavLink = document.getElementById('booksLink');
+const bookAddNavLink = document.getElementById('addBookLink');
+const contactNavLink = document.getElementById('contactLink');
 
 const addBooks = new addBookClass();
 const displayBooks = new displayBooksClass();
@@ -33,3 +39,20 @@ booksList.addEventListener('click', (element) => {
   }
 })
 
+bookListNavLink.addEventListener('click', () => {
+  booksContainer.setAttribute('style', 'display: contents');
+  addBooksContainer.setAttribute('style', 'display:none');
+  contactContainer.setAttribute('style', 'display: none');
+});
+
+bookAddNavLink.addEventListener('click', () => {
+  addBooksContainer.setAttribute('style', 'display: contents');
+  booksContainer.setAttribute('style', 'display: none');
+  contactContainer.setAttribute('style', 'display: none');
+});
+
+contactNavLink.addEventListener('click', () => {
+  contactContainer.setAttribute('style', 'display: contents');
+  addBooksContainer.setAttribute('style', 'display:none');
+  booksContainer.setAttribute('style', 'display: none');
+});

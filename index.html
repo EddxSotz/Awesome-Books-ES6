@@ -6,43 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Awesome Books with JS ES6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
-        <p>Awesome Books</p>
+        <h3>Awesome Books</h3>
         <ul class="navbarItems">
-            <li><a href="#" id="booksLink" class="active">Books</a></li>
-            <li><a href="#" id="addBookLink">Add Book</a></li>
+            <li><a href="#" id="booksLink" class="active">List</a></li>
+            <li><a href="#" id="addBookLink">Add new</a></li>
             <li><a href="#" id="contactLink">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="date"><p id="dateTime"></p></div>
-
-    <div id="container">
-      
-        <div id="books" class="content-section active">
-            <div class="record">
-                <h1 class="mainTitle">All Awesome Books</h1>
-                <ul id="bookList" class="bookList"> 
-                </ul>
-            </div>
-        </div>
-        
-        <div id="addBook" class="content-section">
-                <form id="form" class="form">
-                    <h1 class="title">Add a new Book</h1>
-                    <div class="inputs">
-                        <input type="text" id="bookTitleInput" class="titleInput" required placeholder="Title">
-                        <input type="text" id="bookAuthorInput" class="authorInput" required placeholder="Author">
-                    </div>
-                    <button id="button" class="button" type="submit">Save</button>
-                </form>
-        </div>
+    
+<div class="main-container">
+    <div id="books" class="active">            
+            <h1 class="mainTitle">All Awesome Books</h1>
+            <ul id="bookList" class="bookList"> 
+            </ul>            
     </div>
+        
+    <div id="addBook" class="">
+            <form id="form" class="form">
+                <h1 class="title">Add a new Book</h1>
+                <div class="inputs">
+                    <input type="text" id="bookTitleInput" class="titleInput" required placeholder="Title">
+                    <input type="text" id="bookAuthorInput" class="authorInput" required placeholder="Author">
+                </div>
+                    <button id="button" class="button" type="submit">Add</button>
+            </form>
+    </div>
+    
 
-    <div id="contact" class="content-section">
-            <div class="contactInner">
+    <div id="contact" class="">
             <h1>Contact Information</h1>
             <div>
                 <p>Do you have any questions or you just want to say "Hello"?</p>
@@ -52,16 +50,12 @@
                     <li>Our phone number: +1 234 567 890</li>
                     <li>Our address: Street # 15, Bani Gala, Islamabad, Pakistan </li>
                 </ul>
-            </div>
-        </div>
-    </div>
+            </div>        
+    </div>   
 </div>
-    </div>
-
-    <footer>
-        <p>Copyright</p>
-    </footer>
-
+<footer>
+    <p>Copyright  ...</p>
+</footer>
     <script type="module" src="index.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 # Awesome-Books-ES6
 <div align="center">
   
-  <h3><b>Awesome Books with ES6 syntax</b></h3>
+  <h3><b>Refactoring of the Awesome Books project with ES6 syntax</b></h3>
 
 </div>
 
@@ -29,7 +29,7 @@
 # 📖 Awesome Books<a name="about-project"></a>
 
 
-Basic website that allows users to add/remove books from a list by using JavaScript-ES6 with classes and modules.
+Basic website that allows users to add/remove books from a list by using JavaScript-ES6 with classes, objects and modules.
 
 ## 🛠 Built With <a name="built-with"></a>
 
