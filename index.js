@@ -1,6 +1,6 @@
-import {addBookClass} from './modules/addBooks.js';
-import {displayBooksClass} from './modules/displayBooks.js';
-import { removeBook } from './modules/removeBook.js';
+import AddBookClass from './modules/addBooks.js';
+import DisplayBooksClass from './modules/displayBooks.js';
+import RemoveBook from './modules/removeBook.js';
 
 const form = document.getElementById('form');
 const booksList = document.getElementById('bookList');
@@ -11,33 +11,32 @@ const bookListNavLink = document.getElementById('booksLink');
 const bookAddNavLink = document.getElementById('addBookLink');
 const contactNavLink = document.getElementById('contactLink');
 
-const addBooks = new addBookClass();
-const displayBooks = new displayBooksClass();
-const removeBookItem = new removeBook();
+const addBooks = new AddBookClass();
+const displayBooks = new DisplayBooksClass();
+const removeBookItem = new RemoveBook();
 
-let booksSaved = JSON.parse(localStorage.getItem('BooksList')) || [];  
+let booksSaved = JSON.parse(localStorage.getItem('BooksList')) || [];
 
-//display books upon page load
+// display books upon page load
 displayBooks.showBooksMethod(booksSaved);
 
-//add book action
+// add book action
 form.addEventListener('submit', (event) => {
-  event.preventDefault();  
+  event.preventDefault();
   addBooks.addBookMethod(booksSaved);
   booksSaved = JSON.parse(localStorage.getItem('BooksList')) || [];
   displayBooks.showBooksMethod(booksSaved);
 });
 
-
-//remove button action
+// remove button action
 booksList.addEventListener('click', (element) => {
-  if(element.target.matches(".removeButton")){
-    let index = element.target.dataset.index;
+  if (element.target.matches('.removeButton')) {
+    const { index } = element.target.dataset;
     removeBookItem.removeBook(booksSaved, index);
     booksSaved = JSON.parse(localStorage.getItem('BooksList')) || [];
     displayBooks.showBooksMethod(booksSaved);
   }
-})
+});
 
 bookListNavLink.addEventListener('click', () => {
   booksContainer.setAttribute('style', 'display: contents');
