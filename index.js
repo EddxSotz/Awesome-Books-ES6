@@ -13,7 +13,6 @@ const bookAddNavLink = document.getElementById('addBookLink');
 const contactNavLink = document.getElementById('contactLink');
 const displayDate = document.querySelector('.displayDate');
 
-
 const addBooks = new AddBookClass();
 const displayBooks = new DisplayBooksClass();
 const removeBookItem = new RemoveBook();
@@ -23,10 +22,10 @@ let booksSaved = JSON.parse(localStorage.getItem('BooksList')) || [];
 // display books upon page load
 displayBooks.showBooksMethod(booksSaved);
 
-//display current date
-setInterval(() =>{
+// display current date
+setInterval(() => {
   displayDate.textContent = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
-},1000);
+}, 1000);
 
 // add book action
 form.addEventListener('submit', (event) => {
