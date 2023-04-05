@@ -1,6 +1,7 @@
 import AddBookClass from './modules/addBooks.js';
 import DisplayBooksClass from './modules/displayBooks.js';
 import RemoveBook from './modules/removeBook.js';
+import { DateTime } from './modules/luxon.js';
 
 const form = document.getElementById('form');
 const booksList = document.getElementById('bookList');
@@ -10,6 +11,8 @@ const contactContainer = document.getElementById('contact');
 const bookListNavLink = document.getElementById('booksLink');
 const bookAddNavLink = document.getElementById('addBookLink');
 const contactNavLink = document.getElementById('contactLink');
+const displayDate = document.querySelector('.displayDate');
+
 
 const addBooks = new AddBookClass();
 const displayBooks = new DisplayBooksClass();
@@ -19,6 +22,11 @@ let booksSaved = JSON.parse(localStorage.getItem('BooksList')) || [];
 
 // display books upon page load
 displayBooks.showBooksMethod(booksSaved);
+
+//display current date
+setInterval(() =>{
+  displayDate.textContent = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+},1000);
 
 // add book action
 form.addEventListener('submit', (event) => {

@@ -21,7 +21,6 @@ body {
   justify-content: space-between;
   border: 3px solid black;
   padding: 1rem;
-  margin-bottom: 4rem;
   font-size: 1.25rem;
 }
 
@@ -40,6 +39,12 @@ body {
 .navbarItems a:hover {
   color: #ff6000;
   box-shadow: 0 0.5em 0.5em -0.4em #f55800;
+}
+
+.displayDate {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  text-align: end;
 }
 
 #books {
