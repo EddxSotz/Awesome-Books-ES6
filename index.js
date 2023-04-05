@@ -1,8 +1,7 @@
 import AddBookClass from './modules/addBooks.js';
 import DisplayBooksClass from './modules/displayBooks.js';
 import RemoveBook from './modules/removeBook.js';
-// eslint-disable-next-line import/no-unresolved, import/no-extraneous-dependencies
-import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
+import { DateTime } from './modules/luxon.min.js';
 
 const form = document.getElementById('form');
 const booksList = document.getElementById('bookList');
